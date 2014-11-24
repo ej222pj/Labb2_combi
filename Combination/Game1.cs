@@ -18,8 +18,8 @@ namespace Combination
             : base()
         {
             graphics = new GraphicsDeviceManager(this);
-            graphics.PreferredBackBufferWidth = 400;
-            graphics.PreferredBackBufferHeight = 400;
+            graphics.PreferredBackBufferWidth = 300;
+            graphics.PreferredBackBufferHeight = 300;
             Content.RootDirectory = "Content";
         }
 
@@ -69,7 +69,6 @@ namespace Combination
                 Exit();
 
             // TODO: Add your update logic here
-            explotionSystem.Update((float)gameTime.ElapsedGameTime.TotalSeconds);
 
             base.Update(gameTime);
         }
@@ -80,7 +79,7 @@ namespace Combination
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Red);
 
             // TODO: Add your drawing code here
             explotionSystem.Draw(spriteBatch, (float)gameTime.ElapsedGameTime.TotalSeconds);

@@ -11,10 +11,10 @@ namespace Combination.Content.View
     class SplitterSystem
     {
         private SplitterParticle[] particles;
-        private int maxPartical = 100;
+        private int maxPartical = 200;
         private float time = 0;
         private static float runTime = 3;
-        private static float maxSpeed = 0.4f;
+        private static float maxSpeed = 4.5f;
         private Camera camera;
         private Vector2 position;
         private Texture2D splitterTexture;
@@ -40,7 +40,7 @@ namespace Combination.Content.View
                 direction.Normalize();
                 direction = direction * ((float)rand.NextDouble() * maxSpeed);
 
-                particles[i] = new SplitterParticle(direction);
+                particles[i] = new SplitterParticle(direction, position);
             }
         }
 

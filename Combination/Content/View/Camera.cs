@@ -34,10 +34,10 @@ namespace Combination.Content.View
 
         public Vector2 scaleVector(float xPos, float yPos)
         {
-            float vX = (xPos * scale + border);
-            float vY = (yPos * scale + border);
+            float X = (xPos * scale + border);
+            float Y = (yPos * scale + border);
 
-            return new Vector2(vX, vY);
+            return new Vector2(X, Y);
         }
 
         public float Scale

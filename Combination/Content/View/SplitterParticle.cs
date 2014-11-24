@@ -12,15 +12,14 @@ namespace Combination.Content.View
         private Vector2 position;
         private Vector2 velocity;
         private Vector2 acceleration;
-        private static float splitterSize = 0.03f;
+        private static float splitterSize = 0.04f;
 
 
-        public SplitterParticle(Vector2 Velocity)
+        public SplitterParticle(Vector2 Velocity, Vector2 Position)
         {
-            position = new Vector2(0.5f, 0.5f);
+            position = Position;
             velocity = Velocity;
-            acceleration = new Vector2(0, 0.7f);
-
+            acceleration = new Vector2(0, 0.5f);
         }
 
         public void Update(float timeElapsed)

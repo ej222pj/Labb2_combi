@@ -17,7 +17,7 @@ namespace Combination.Content.View
         private int numberOfFrames = 24;
         private int FramesX = 4;
         private int frameSize;
-        private float scale = 0.5f;
+        private float scale = 0.7f;
         Camera camera;
 
         public ExplotionParticle(Viewport viewPort, Vector2 Position, ContentManager content)
